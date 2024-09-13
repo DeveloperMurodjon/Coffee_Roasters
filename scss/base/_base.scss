@@ -22,3 +22,58 @@ image {
   object-fit: cover;
   display: flex;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $main-font;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+main {
+  flex-grow: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $secondary-font;
+  font-weight: 900;
+}
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 3.9rem;
+    padding-right: 3.9rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .header {
+    padding: 3.2rem 0 4rem;
+  }
+  .site-logo__image {
+    width: 163px;
+    height: 18px;
+  }
+  .sitenav {
+    display: none;
+  }
+  .navbar-toggle {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    display: block;
+  }
+}
