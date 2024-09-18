@@ -1,0 +1,202 @@
+// PLAN HERO
+.plan-hero__container {
+  background-image: url(../../images/plan/desktop/image-hero-blackcup.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding-bottom: 16.8rem;
+}
+.plan-hero__content {
+  padding: 13.7rem 0 13.4rem 8.5rem;
+}
+.plan-hero__content__title {
+  color: $ligh-cream;
+  padding-bottom: 2.4rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 900;
+}
+.plan-hero__content__description {
+  color: $ligh-cream;
+  max-width: 445px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+@media screen and (max-width: 768px) {
+  .plan-hero__container {
+    background-image: url(../../images/plan/tablet/image-hero-blackcup.jpg);
+  }
+  .plan-hero__content {
+    padding: 18rem 0 18rem 5.8rem;
+  }
+  .plan-hero__content__title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .plan-hero__content__description {
+    max-width: 398px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .plan-hero__container {
+    background-image: url(../../images/plan/mobile/image-hero-blackcup.jpg);
+  }
+  .plan-hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 11.1rem 2.4rem 8.7rem 2.4rem;
+  }
+  .plan-hero__content__title {
+    padding-bottom: 2.4rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+  .plan-hero__content__description {
+    text-align: center;
+    max-width: 279px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+//SELECTION
+.selection {
+  margin-top: 20rem;
+}
+
+.selection__title {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 900;
+  color: $gray;
+  padding-bottom: 8rem;
+}
+.selection__steps {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2px;
+  background-color: $pale_pink;
+
+  span {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-color: #fff;
+    border: 2px solid $dark_cyan;
+    border-radius: 50%;
+  }
+}
+
+.selection__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.selection__card {
+  max-width: 285px;
+  display: flex;
+  flex-direction: column;
+}
+.number {
+  font-weight: 900;
+  line-height: 7.2rem;
+  font-size: 7.2rem;
+  padding: 67px 0 18px 0;
+  font-family: $secondary-font;
+  color: $pale_pink;
+}
+.selection__box__title {
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  color: $dark_grey_blue;
+  max-width: 223px;
+}
+.selection__box__description {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  padding: 42px 0 64px 0;
+  color: $gray;
+}
+@media screen and (max-width: 768px) {
+  .selection {
+  }
+
+  .selection__title {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding-bottom: 4rem;
+  }
+  .selection__steps {
+    width: 497px;
+  }
+
+  .selection__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 223px;
+  }
+  .number {
+    padding: 4.8px 0 4.2px 0;
+  }
+  .selection__box__title {
+    padding: 4.2rem 0 3.8rem 0;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .selection__box__description {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 3.8px 0 4.4rem 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .selection {
+  }
+  .selection__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .selection__title {
+    padding-top: 0rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding-bottom: 4rem;
+  }
+  .selection__steps {
+    display: none;
+  }
+  .selection__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .selection__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 327px;
+  }
+  .number {
+    padding: 0rem 0 2.4rem 0;
+  }
+  .selection__box__title {
+    max-width: 327px;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .selection__box__description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 2.4rem 0 5.6rem 0;
+  }
+}

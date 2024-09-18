@@ -62,15 +62,19 @@
 }
 // OUR COMMITMENT
 .commitment {
-  width: 100vw;
-  margin: 16.8rem 8.5rem;
-  margin-right: 8.5rem;
+  width: 100%;
+  max-width: 1280px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  margin-top: 168px;
+  margin-bottom: 256px;
 }
 .commitment__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 125px;
 }
 .commitment__imag-content {
   overflow: hidden;
@@ -94,6 +98,9 @@
   .commitment {
     margin: 14.4rem 0;
     margin-right: 0rem;
+  }
+  .commitment__container {
+    gap: 69px;
   }
 
   .commitment__imag-content {
@@ -119,6 +126,12 @@
     justify-content: space-between;
     align-items: center;
   }
+  .commitment__container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 120px;
+  }
 
   .commitment__imag-content {
     overflow: hidden;
@@ -143,18 +156,24 @@
     text-align: center;
   }
 }
-// UNCOMPROMISING QUAILTY
+// UNCOMPROMISING QUAILTY SECTION
 .quality {
-  background-color: $footer-bg-color;
+  max-width: 1280px;
+  padding-bottom: 8.4rem;
 }
 .quality__container {
+  border-radius: 8px;
+  background-color: $footer-bg-color;
   padding-left: 40px;
+  padding-right: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 .quality__content {
+  margin-top: 88px;
+  margin-bottom: 176px;
 }
 .quality__content__title {
   padding: 88px 0 32px 0px;
@@ -170,46 +189,214 @@
   color: $ligh-cream;
 }
 .quality__image-content {
-  margin-top: -88px;
-  margin-bottom: 88px;
+  margin-top: -176px;
   border-radius: 8px;
   overflow: hidden;
 }
-.quailty__image {
-}
+
 @media screen and (max-width: 768px) {
   .quality__container {
-    padding-left: 40px;
+    margin-top: 26.4rem;
+    padding-left: 57px;
+    padding-right: 58px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
   }
   .quality__content {
+    margin-top: 64px;
+    margin-bottom: 67px;
     order: 2;
   }
   .quality__image-content {
     order: 1;
   }
   .quality__content__title {
-    padding: 88px 0 32px 0px;
-    font-weight: 900;
-    font-size: 4rem;
+    padding: 0px 0 32px 0px;
+    font-size: 3.2rem;
     line-height: 4.8rem;
-    color: $ligh-cream;
   }
   .quality__content__description {
     max-width: 540px;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    color: $ligh-cream;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
   }
   .quality__image-content {
     margin-top: -88px;
-    margin-bottom: 88px;
     border-radius: 8px;
     overflow: hidden;
   }
-  .quailty__image {
+}
+@media screen and (max-width: 400px) {
+  .quality__container {
+    margin-top: 12rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .quality__content {
+    margin-top: 64px;
+    margin-bottom: 61px;
+    order: 2;
+  }
+  .quality__image-content {
+    order: 1;
+  }
+  .quality__content__title {
+    padding: 0px 0 2.4px 0px;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+  .quality__content__description {
+    max-width: 27.9rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  .quality__image-content {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}
+// OUR HEADQUARTES
+.headquarters {
+}
+.headquarters__container {
+  padding: 8.4rem 15rem 0rem 8.5rem;
+}
+.headquarters__title {
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: $gray;
+}
+.headquarters__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 95px;
+}
+.headquarters__card {
+  padding-top: 7.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.headquarters__card-img {
+  width: 100%;
+  max-width: 51.56px;
+  padding-bottom: 22.5px;
+}
+.headquarters__card-title {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  color: $dark_grey_blue;
+  padding-top: 22.5px;
+  padding-bottom: 12.2px;
+}
+.headquarters__card-adress {
+  font-size: 1.6rem;
+  line-height: 2.6em;
+  color: $dark_grey_blue;
+  padding-top: 12.2px;
+  a {
+    color: $dark_grey_blue;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headquarters__container {
+    padding: 6rem 15rem 0rem 0rem;
+  }
+  .headquarters__title {
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: $gray;
+  }
+  .headquarters__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .headquarters__card {
+    padding-top: 7.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .headquarters__card-img {
+    padding-bottom: 22.5px;
+  }
+  .headquarters__card-title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: $dark_grey_blue;
+    padding-top: 22.5px;
+    padding-bottom: 10px;
+  }
+  .headquarters__card-adress {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: $dark_grey_blue;
+    padding-top: 10.1px;
+    a {
+      color: $dark_grey_blue;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .headquarters__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.6rem 0rem 0rem 0rem;
+  }
+  .headquarters__title {
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: $gray;
+  }
+  .headquarters__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 80px;
+  }
+  .headquarters__card {
+    align-items: center;
+    text-align: center;
+    padding-top: 7.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .headquarters__card-img {
+    padding-bottom: 24px;
+  }
+  .headquarters__card-title {
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: $dark_grey_blue;
+    padding-top: 24px;
+    padding-bottom: 11px;
+  }
+  .headquarters__card-adress {
+    text-align: center;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: $dark_grey_blue;
+    padding-top: 11px;
+    a {
+      color: $dark_grey_blue;
+    }
   }
 }
