@@ -1067,7 +1067,7 @@ h5 {
     max-width: 223px;
   }
   .number {
-    padding: 4.8px 0 4.2px 0;
+    padding: 4.8rem 0 4.2rem 0;
   }
   .how-works__box__title {
     padding: 4.2rem 0 3.8rem 0;
@@ -1077,7 +1077,7 @@ h5 {
   .how-works__box__description {
     font-size: 1.5rem;
     line-height: 2.5rem;
-    padding: 3.8px 0 4.4rem 0;
+    padding: 3.8rem 0 4.4rem 0;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1574,6 +1574,7 @@ h5 {
 @media screen and (max-width: 768px) {
   .plan-hero__container {
     background-image: url(../../images/plan/tablet/image-hero-blackcup.jpg);
+    padding-bottom: 14.4rem;
   }
   .plan-hero__content {
     padding: 18rem 0 18rem 5.8rem;
@@ -1591,6 +1592,7 @@ h5 {
 @media screen and (max-width: 400px) {
   .plan-hero__container {
     background-image: url(../../images/plan/mobile/image-hero-blackcup.jpg);
+    padding-bottom: 12rem;
   }
   .plan-hero__content {
     display: flex;
@@ -1611,7 +1613,15 @@ h5 {
   }
 }
 .selection {
+  border-radius: 8px;
+  max-width: 1280px;
+  padding-top: 100px;
+  background: #2c343e;
   margin-top: 20rem;
+}
+
+.selection__container {
+  padding: 13.7rem 0 13.4rem 8.5rem;
 }
 
 .selection__title {
@@ -1634,7 +1644,7 @@ h5 {
   display: inline-block;
   width: 31px;
   height: 31px;
-  background-color: #fff;
+  background-color: transparent;
   border: 2px solid #0e8784;
   border-radius: 50%;
 }
@@ -1665,7 +1675,7 @@ h5 {
   font-weight: 900;
   font-size: 3.2rem;
   line-height: 3.6rem;
-  color: #333d4b;
+  color: white;
   max-width: 223px;
 }
 
@@ -1673,10 +1683,17 @@ h5 {
   font-size: 1.6rem;
   line-height: 2.6rem;
   padding: 42px 0 64px 0;
-  color: #848990;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
+  .selection {
+    max-width: 768px;
+  }
+  .selection__container {
+    padding: 0;
+    max-width: 689px;
+  }
   .selection__title {
     font-size: 2.4rem;
     line-height: 3.2rem;
@@ -1691,7 +1708,7 @@ h5 {
     max-width: 223px;
   }
   .number {
-    padding: 4.8px 0 4.2px 0;
+    padding: 4.8rem 0 4.2rem 0;
   }
   .selection__box__title {
     padding: 4.2rem 0 3.8rem 0;
@@ -1705,6 +1722,9 @@ h5 {
   }
 }
 @media screen and (max-width: 400px) {
+  .selection {
+    width: 100%;
+  }
   .selection__content {
     display: flex;
     flex-direction: column;

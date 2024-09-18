@@ -25,6 +25,7 @@
 @media screen and (max-width: 768px) {
   .plan-hero__container {
     background-image: url(../../images/plan/tablet/image-hero-blackcup.jpg);
+    padding-bottom: 14.4rem;
   }
   .plan-hero__content {
     padding: 18rem 0 18rem 5.8rem;
@@ -42,6 +43,7 @@
 @media screen and (max-width: 400px) {
   .plan-hero__container {
     background-image: url(../../images/plan/mobile/image-hero-blackcup.jpg);
+    padding-bottom: 12rem;
   }
   .plan-hero__content {
     display: flex;
@@ -63,9 +65,15 @@
 }
 //SELECTION
 .selection {
+  border-radius: 8px;
+  max-width: 1280px;
+  padding-top: 100px;
+  background: $footer-bg-color;
   margin-top: 20rem;
 }
-
+.selection__container {
+  padding: 13.7rem 0 13.4rem 8.5rem;
+}
 .selection__title {
   font-size: 2.4rem;
   line-height: 3.2rem;
@@ -85,7 +93,7 @@
     display: inline-block;
     width: 31px;
     height: 31px;
-    background-color: #fff;
+    background-color: transparent;
     border: 2px solid $dark_cyan;
     border-radius: 50%;
   }
@@ -114,17 +122,22 @@
   font-weight: 900;
   font-size: 3.2rem;
   line-height: 3.6rem;
-  color: $dark_grey_blue;
+  color: $white-color;
   max-width: 223px;
 }
 .selection__box__description {
   font-size: 1.6rem;
   line-height: 2.6rem;
   padding: 42px 0 64px 0;
-  color: $gray;
+  color: $white-color;
 }
 @media screen and (max-width: 768px) {
   .selection {
+    max-width: 768px;
+  }
+  .selection__container {
+    padding: 0;
+    max-width: 689px;
   }
 
   .selection__title {
@@ -142,7 +155,7 @@
     max-width: 223px;
   }
   .number {
-    padding: 4.8px 0 4.2px 0;
+    padding: 4.8rem 0 4.2rem 0;
   }
   .selection__box__title {
     padding: 4.2rem 0 3.8rem 0;
@@ -157,6 +170,7 @@
 }
 @media screen and (max-width: 400px) {
   .selection {
+    width: 100%;
   }
   .selection__content {
     display: flex;
